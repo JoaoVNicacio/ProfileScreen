@@ -1,5 +1,5 @@
 // Perfil GitHub - React Native - DIO
-import React from 'react';
+import React from 'react'
 import {
   StyleSheet,
   Image,
@@ -9,48 +9,48 @@ import {
   StatusBar,
   Pressable,
   Linking
-} from 'react-native';
+} from 'react-native'
 
 // VARIÁVEIS COM REPETIÇÃO OU LINKS:
 // Cor de fundo do GitHub
-const colorGithub = '#010409';
+const colorGithub = '#010409'
 
 // Imagem de perfil
-const profileImageGitHub = 'https://avatars.githubusercontent.com/u/74374178?s=400&u=4a3d3be3896d3424944fdaf1f3941b1786c5aa1e&v=4';
+const profileImageGitHub = 'https://avatars.githubusercontent.com/u/74374178?s=400&u=4a3d3be3896d3424944fdaf1f3941b1786c5aa1e&v=4'
 
 // cor da fonte do username:
-const usernameFontColor = '#C9D1D9';
+const usernameFontColor = '#C9D1D9'
 
 // Cor de fundo da view:
-const viewBackgroundColor = '#161b22';
+const viewBackgroundColor = '#161b22'
 
 // Links do LinkedIn e Github:
 const myLinkedInURL = 'https://www.linkedin.com/in/jo%C3%A3o-victor-nic%C3%A1cio-203297202/';
-const myGitHubURL = 'https://github.com/JoaoVNicacio';
+const myGitHubURL = 'https://github.com/JoaoVNicacio'
 
 // Exportando o app
 export default function App() {
 
   // Função Assincrona para abrir o LinkedIn
   const handlePressGoToLinkedIn = async() =>{
-    const response = await Linking.canOpenURL(myLinkedInURL);
-    console.log(`Verifying Link`);
+    const response = await Linking.canOpenURL(myLinkedInURL)
+    console.log(`Verifying Link`)
     //Lidando com a promisse:
     if (response){
-      console.log(`Link approved`);
-      console.log(`Openning...`);
-      await Linking.openURL(myLinkedInURL);
+      console.log(`Link approved`)
+      console.log(`Openning...`)
+      await Linking.openURL(myLinkedInURL)
     }
   }
   // Função Assincrona para abrir o GitHub
   const handlePressGoToGitHub = async() =>{
-    const response = await Linking.canOpenURL(myGitHubURL);
-    console.log(`Verifying Link`);
+    const response = await Linking.canOpenURL(myGitHubURL)
+    console.log(`Verifying Link`)
     //Lidando com a promisse:
     if (response){
-      console.log(`Link approved`);
-      console.log(`Openning...`);
-      await Linking.openURL(myGitHubURL);
+      console.log(`Link approved`)
+      console.log(`Openning...`)
+      await Linking.openURL(myGitHubURL)
     }
   }
 
@@ -133,4 +133,4 @@ const style = StyleSheet.create({
     marginTop: 30,
     padding: 15,
   }
-});
+})
